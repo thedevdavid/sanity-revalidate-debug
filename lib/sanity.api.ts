@@ -23,6 +23,8 @@ export const previewSecretId: `${string}.${string}` = 'preview.secret';
 // See the app/api/revalidate/route.ts for how this is used
 export const revalidateSecret = process.env.SANITY_REVALIDATE_SECRET;
 
+export const readToken = process.env.SANITY_API_READ_TOKEN;
+
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {
     throw new Error(errorMessage);

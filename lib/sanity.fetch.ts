@@ -2,15 +2,6 @@ import 'server-only';
 
 import type { QueryParams } from '@sanity/client';
 import { client } from '@/lib/sanity.client';
-import {
-  pagePathsQuery,
-  pageBySlugQuery,
-  postBySlugQuery,
-  postPathsQuery,
-  allPostsQuery,
-  allPagesQuery,
-} from '@/lib/sanity.queries';
-import type { Category, Page, Post } from '@/types';
 
 import { revalidateSecret } from '@/lib/sanity.api';
 
